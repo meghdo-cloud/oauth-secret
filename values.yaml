@@ -1,0 +1,7 @@
+namespace: jenkins
+project_id: meghdo-4567
+secrets:
+-  name: git_client_id
+   token: clientid
+-  name: git_client_secret
+   token: clientsecret
