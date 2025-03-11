@@ -12,7 +12,7 @@ spec:
       - objectName: {{ .name }}
         objectType: secretsmanager
         objectAlias: {{ .token }}
-        objectVersion: latest
+        region: {{ $.Values.aws.region }}
   secretObjects:
     - secretName: {{ .name | replace "_" "-" }}
       type: Opaque

@@ -3,9 +3,9 @@ entries:
   oauth-secret:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-03-11T22:02:47.3326688Z"
+    created: "2025-03-11T23:05:16.896129Z"
     description: A Helm chart for Kubernetes
-    digest: f2eb4d90692836821bffc17b77292c9563430c61ac407e1f94bf2e8f551c6f32
+    digest: e13eb48b8f95f9e2f2d850ddeb2b20fbc02c847b053668bb782fc364a64eac9d
     name: oauth-secret
     type: application
     urls:
@@ -13,7 +13,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-03-11T22:02:47.3311525Z"
+    created: "2025-03-11T23:05:16.8953988Z"
     description: A Helm chart for Kubernetes
     digest: 662c5874445cdc21efe4128a31d41b7681c15adf9132db4f1a5e3bc44431b823
     name: oauth-secret
@@ -23,7 +23,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-03-11T22:02:47.3304514Z"
+    created: "2025-03-11T23:05:16.8947432Z"
     description: A Helm chart for Kubernetes
     digest: 22bbc1ebaf3e768798a43e0a00272741337b77629ff1c690b025c6da27bf84e9
     name: oauth-secret
@@ -31,4 +31,4 @@ entries:
     urls:
     - https://meghdo-cloud.github.io/oauth-secret/oauth-secret-0.1.0.tgz
     version: 0.1.0
-generated: "2025-03-11T22:02:47.3290429Z"
+generated: "2025-03-11T23:05:16.8932348Z"
