@@ -6,25 +6,25 @@ metadata:
   namespace: {{ $.Values.namespace }}
 spec:
   {{- if eq $.Values.cloudProvider "aws" }}
-provider: aws
-parameters:
-  objects: |
-    - objectName: {{ .name }}
-      objectType: secretsmanager
-      objectAlias: {{ .token }}
-      objectVersion: latest
-secretObjects:
-  - secretName: {{ .name | replace "_" "-" }}
-    type: Opaque
-    data:
-      - objectName: {{ .token }}
-        key: value
+  provider: aws
+  parameters:
+    objects: |
+      - objectName: {{ .name }}
+        objectType: secretsmanager
+        objectAlias: {{ .token }}
+        objectVersion: latest
+  secretObjects:
+    - secretName: {{ .name | replace "_" "-" }}
+      type: Opaque
+      data:
+        - objectName: {{ .token }}
+          key: value
   {{- else if eq $.Values.cloudProvider "gcp" }}
-provider: gke
-parameters:
-  secrets: |
-    - resourceName: "projects/{{ $.Values.gcp.project_id }}/secrets/{{ .name }}/versions/latest"
-      path: {{ .token }}
+  provider: gke
+  parameters:
+    secrets: |
+      - resourceName: "projects/{{ $.Values.gcp.project_id }}/secrets/{{ .name }}/versions/latest"
+        path: {{ .token }}
   {{- end }}
 ---
 {{- end }}
